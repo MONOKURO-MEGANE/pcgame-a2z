@@ -15,13 +15,13 @@ const config = {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    open: true,
+    open: false,
     host: "localhost",
   },
   cache: false,
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: path.join(__dirname, "src", "index.html"),
     }),
 
     new MiniCssExtractPlugin(),
