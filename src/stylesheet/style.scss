@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* clearfix */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  display: block;
+}
+
+/* フッタを一番下に配置するCSS */
+html, body { height: 100%; }
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  box-sizing: border-box;
+
+  font-family: Osaka, "Meiryo UI", sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+/* Youtube のレスポンシブ対応 */
+.youtube {
+  width: 90%;
+  aspect-ratio: 16 / 9;
+
+  margin: auto;
+  text-align: center;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
