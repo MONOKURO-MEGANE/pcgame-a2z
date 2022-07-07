@@ -24,7 +24,7 @@ import "./stylesheet/common.scss";
 import "./stylesheet/header.scss";
 import "./stylesheet/footer.scss";
 
-import "./stylesheet/index.scss";
+import "./stylesheet/introduction.scss";
 
 
 // ページ内スムーズスクロール
