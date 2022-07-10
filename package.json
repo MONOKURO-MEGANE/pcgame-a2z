@@ -9,7 +9,7 @@
     "dev": "webpack --mode=development --node-env=development --color",
     "prod": "webpack --mode=production --node-env=production --color",
     "watch": "webpack --watch --color",
-    "serve": "webpack serve --mode=development --color"
+    "serve": "webpack serve --mode=development --node-env=development --color"
   },
   "keywords": [],
   "author": "",
