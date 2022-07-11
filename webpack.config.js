@@ -13,7 +13,12 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 const config = {
   entry: [
     "./src/index.js",
+    "./src/inquiry.js",
     "./src/introduction.js",
+    "./src/link.js",
+    "./src/platform.js",
+    "./src/privacy.js",
+    "./src/supply.js",
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -28,6 +33,7 @@ const config = {
   },
   plugins: [
     new CleanWebpackPlugin({
+      // "output:" で指定したディレクトリを空にする
       cleanOnceBeforeBuildPatterns: "**/*",
     }),
     new HtmlWebpackPlugin({
@@ -37,6 +43,22 @@ const config = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "src", "introduction.html"),
       filename: "introduction.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "link.html"),
+      filename: "link.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "platform.html"),
+      filename: "platform.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "privacy.html"),
+      filename: "privacy.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "supply.html"),
+      filename: "supply.html",
     }),
 
     new MiniCssExtractPlugin(),
