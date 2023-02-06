@@ -1,0 +1,33 @@
+/*****************************************
+**        My Original Global CSS        **
+*****************************************/
+
+/* フッタを一番下に配置するCSS */
+html,
+body {
+  height: 100%;
+}
+footer {
+  position: sticky;
+  top: 100vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  box-sizing: border-box;
+
+  font-family: "Font Awesome 5 Free", YuGothic, "Yu Gothic Medium", "Yu Gothic", Osaka, "Meiryo UI", sans-serif;
+
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+figure {
+  line-height: 0;
+}
