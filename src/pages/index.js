@@ -1,11 +1,11 @@
-import * as React from "react"
+import React from "react"
 import { Meta } from "../components/meta"
 import { Layout } from "../components/layout"
 
 const IndexPage = ({ data }) => {
   return (
     <React.Fragment>
-      <Meta pageTitle="" pageDesc="PCゲームを始めるために必要なパーツを具体的に扱うとともに、入門者や初心者にどのパーツがPCゲームを楽しむ上で何故必要なのかを簡単に紹介している。" />
+      <Meta pageTitle="トップページ" pageDesc="PCゲームを始めるために必要なパーツを具体的に扱うとともに、入門者や初心者にどのパーツがPCゲームを楽しむ上で何故必要なのかを簡単に紹介している。" />
       <Layout>
 
       </Layout>

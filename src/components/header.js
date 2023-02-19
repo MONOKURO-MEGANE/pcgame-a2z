@@ -36,7 +36,7 @@ export const Header = () => {
     <header>
       <h1 css={siteSummary}>ゲーム用パソコンの購入方法から、高画質ゲームに必要な各種パーツの解説やPCゲームを始めるなら知っておきたいゲーム配信サイトまで！</h1>
       <div css={siteTitleContainer}>
-        <StaticImage style={{width:"100%",height:"auto",aspectRatio:"5/1"}} src="../images/header_image.png" alt="" />
+        <StaticImage style={{ width:"100%", height:"auto", aspectRatio:"5/1" }} src="../images/header_image.png" alt="" />
         <h2>PCゲームのAtoZ</h2>
       </div>
     </header>
